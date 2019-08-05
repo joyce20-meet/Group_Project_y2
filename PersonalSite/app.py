@@ -5,14 +5,19 @@ from flask import session as login_session
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 
-@app.route('/')
+@app.route('/index.html')
 def home():
-    return render_template('about.html')
+    return render_template('index.html')
     
 
-@app.route('/blog')
+@app.route('/blog.html')
 def blog():
 	return render_template("blog.html")
+
+
+@app.route('/about.html')
+def about():
+	return render_template("about.html")
 
 
 
