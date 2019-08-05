@@ -8,7 +8,11 @@ app.config['SECRET_KEY'] = 'you-will-never-guess'
 @app.route('/index.html')
 def home():
     return render_template('index.html')
-    
+
+@app.route('/')
+def NewHome():
+	return home()
+
 
 @app.route('/blog.html')
 def blog():
