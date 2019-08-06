@@ -514,7 +514,7 @@ section
 {
 	margin-right: 26px;
 }
-.main_nav ul li.active,
+
 .main_nav ul li:hover
 {
 	background: #adc867;
