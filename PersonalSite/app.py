@@ -1,4 +1,4 @@
-# from databases import *
+from database import *
 from flask import Flask, request, redirect, render_template
 from flask import session as login_session
 
@@ -7,18 +7,23 @@ app.config['SECRET_KEY'] = 'you-will-never-guess'
 
 @app.route('/index.html')
 def home():
-    return render_template('index.html')
+	print(query_all())
+	return render_template('index.html')
 
 @app.route('/')
 def NewHome():
 	return home()
 
 
-@app.route('/blog.html')
+@app.route('/blog.html',methods=["GET","POST"])
 def blog():
-	return render_template("blog.html")
-
-
+	if request.method == "GET":
+		return render_template("blog.html")
+	else :
+		username = request.form['username']
+		event = request.form["event"]
+		add_event(username,event)
+		return NewHome()
 @app.route('/about.html')
 def about():
 	return render_template("about.html")
@@ -70,4 +75,4 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)
