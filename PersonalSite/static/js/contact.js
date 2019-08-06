@@ -106,15 +106,15 @@ $(document).ready(function()
 
 	function initGoogleMap()
 	{
-		var myLatlng = new google.maps.LatLng(40.760836, -73.910357);
+		var myLatlng = new google.maps.LatLng(31.7683, 35.2137);
     	var mapOptions = 
     	{
     		center: myLatlng,
-	       	zoom: 14,
+	       	zoom: 20,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			draggable: true,
 			scrollwheel: false,
-			zoomControl: true,
+			zoomControl: false,
 			zoomControlOptions:
 			{
 				position: google.maps.ControlPosition.RIGHT_CENTER
@@ -123,7 +123,7 @@ $(document).ready(function()
 			scaleControl: false,
 			streetViewControl: false,
 			rotateControl: false,
-			fullscreenControl: true,
+			fullscreenControl: false,
 			styles:
 			[
 			  {
