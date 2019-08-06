@@ -7,10 +7,13 @@ class Volunteer(Base):
 	__tablename__ ="Volunteer"
 	user_id = Column(Integer,primary_key=True)
 	username = Column(String)
+	phonenumber = Column(String)
 	event = Column(String)
 	def __repr__(self):
 		return("volunteer_name: {}\n"
-				"Volunteer_choice: {}\n").format(
+				"Volunteer_choice: {}\n"
+				"Volunteer_phonenumber").format(
 				self.username,
-				self.event)
+				self.event,
+				self.phonenumber)
 			
