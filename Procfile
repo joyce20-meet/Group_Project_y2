@@ -1,1 +1,1 @@
-web gunicorn app:NewHome
+web gunicorn app:app
