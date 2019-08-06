@@ -69,6 +69,25 @@
 
 #sol {color:black;}
 
+.name{border-color: #adc867; border-radius: 4px; border-width: 3px;-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;}
+
+.sub {border-color: #adc867; border-radius: 4px; border-width: 3px; width: 90px; background-color: white;-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;}
+
+.sub:hover {background-color: #adc867; color:white;-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;}
+
+
 </style>
 
 
@@ -82,6 +101,7 @@
 <link href="{{url_for('static', filename='plugins/font-awesome-4.7.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/blog.css')}}">
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/blog_responsive.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/forms.css')}}">
 </head>
 <body>
 
@@ -187,13 +207,13 @@
 		</div>
 	</div>
 	
-    <div>
+    <div class="form_sign_up">
     	<center>
     	<form action="/blog.html" method="post">
-    		Username <br> <input type="text" name="username" class="username">
+    		First Name <br> <input type="text" name="username" class="name">
     	<br><br>
-    		Which event would you like to take a part in? <br> <input type="text" name="event"><br><br>
-    		<input type ="submit" value="submit">
+    		Which event would you like to take a part in? <br> <input type="text" name="event" class="name"><br><br>
+    		<input type ="submit" value="Submit" class="sub">
     	</form>
     </center>
     </div>
