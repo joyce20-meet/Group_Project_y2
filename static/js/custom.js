@@ -148,7 +148,7 @@ $(document).ready(function()
     	var mapOptions = 
     	{
     		center: myLatlng,
-	       	zoom: 30,
+	       	zoom: 40,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			draggable: true,
 			scrollwheel: false,
