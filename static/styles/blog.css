@@ -530,11 +530,11 @@ section
 }
 .main_nav ul li.active a
 {
-	color: #ffffff;
+	color: black;
 }
 .main_nav ul li a:hover
 {
-	color: #ffffff;
+	color:black;
 }
 .submit
 {
@@ -550,7 +550,7 @@ section
 	line-height: 61px;
 	font-size: 14px;
 	font-weight: 500;
-	color: #ffffff;
+	color: black;
 	text-transform: uppercase;
 }
 .hamburger
@@ -1199,33 +1199,7 @@ section
 	color: #2b2e35;
 	line-height: 1.875;
 }
-.listing_small_location a:hover
-{
-	color: #adc867;
-}
-.listing_small_info
-{
-	background: #f3f7fb;
-	padding-left: 37px;
-	padding-right: 15px;
-	padding-top: 18px;
-	padding-bottom: 17px;
-	margin-top: 2px;
-}
-.listing_small_info ul li
-{
-	margin-bottom: 10px;
-}
-.listing_small_info ul li:not(:last-of-type)
-{
-	margin-right: 28px;
-}
-.listing_small_info ul li span
-{
-	margin-left: 8px;
-	font-size: 12px;
-	font-weight: 600;
-	color: #6c7079;
+
 }
 .footer_bar
 {
