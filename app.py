@@ -22,7 +22,8 @@ def blog():
 	else :
 		username = request.form['username']
 		event = request.form["event"]
-		add_event(username,event)
+		phonenumber = request.form["phonenumber"]
+		add_event(username,event,phonenumber)
 		return NewHome()
 @app.route('/about.html')
 def about():
